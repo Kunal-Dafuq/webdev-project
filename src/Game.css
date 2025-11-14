@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 5px 0;
+  color: #2d3748;
+}
+
+.subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #718096;
+  margin: 0 0 30px 0;
+}
+
+.balance-box {
+  background: #fef3c7;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #fbbf24;
+}
+
+.balance-label {
+  font-size: 16px;
+  color: #78350f;
+}
+
+.balance-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #15803d;
+}
+
+.captured-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.view-captured-btn {
+  background: #e0e7ff;
+  color: #3730a3;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.view-captured-btn:hover {
+  background: #c7d2fe;
+  transform: translateY(-1px);
+}
+
+.challenge-box {
+  background: #ddd6fe;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #a78bfa;
+}
+
+.challenge-box-empty {
+  background: #f3f4f6;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px dashed #9ca3af;
+}
+
+.challenge-title {
+  font-size: 18px;
+  color: #4338ca;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+
+.challenge-subtitle {
+  font-size: 11px;
+  color: #6366f1;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pokemon-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #64748b;
+  margin: 15px 0 5px 0;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 42px;
+  font-weight: bold;
+  color: #6366f1;
+  margin: 0;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #6366f1;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.check-btn {
+  flex: 1;
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.check-btn:hover {
+  background: #059669;
+}
+
+.skip-btn {
+  flex: 1;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.skip-btn:hover {
+  background: #d97706;
+}
+
+.abandon-btn {
+  flex: 1;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.abandon-btn:hover {
+  background: #dc2626;
+}
+
+.new-challenge-btn {
+  width: 100%;
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.2s;
+}
+
+.new-challenge-btn:hover {
+  background: #4f46e5;
+}
+
+.message-box {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.6;
+  border: 1px solid #cbd5e1;
+}
+
+.loading-spinner {
+  font-size: 48px;
+  text-align: center;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-message {
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 15px;
+}

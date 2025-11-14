@@ -1,65 +1,58 @@
-/* Global reset and font */
-body {
-  margin: 0;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f9fafb;
-}
-
-/* Center the card on the screen */
 .container {
+  width: 100%;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin-top: 40px;
 }
 
-/* Card styling */
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  background: #f5f5f5;
+}
+
 .card {
-  background-color: #fff;
-  width: 380px;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-/* Title */
 .title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 0.5rem;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-/* Subtitle */
 .subtitle {
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-bottom: 1.5rem;
-  font-style: italic;
+  color: gray;
+  margin-bottom: 15px;
 }
 
-/* Description */
 .description {
-  font-size: 0.95rem;
-  color: #374151;
-  line-height: 1.5;
-  margin-bottom: 1.75rem;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
 }
 
-/* Button */
-.btn {
-  background-color: #4f46e5;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.6rem 1.8rem;
+.begin-btn {
+  padding: 12px 20px;
+  background: #5348ff;
   border: none;
-  border-radius: 8px;
+  color: white;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  font-size: 16px;
+  width: 100%;
 }
 
-.btn:hover {
-  background-color: #4338ca;
+.begin-btn:hover {
+  background: #4034d9;
 }
